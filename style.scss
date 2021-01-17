@@ -1,0 +1,101 @@
+$main-color:#484FFF;
+@mixin fcenter{
+    display:flex;
+    justify-content: center;
+}
+body{
+    overflow-x:hidden;
+    h4{
+        font-size:20px;
+        font-weight: bold;
+    }
+}
+.header{
+    @include fcenter;
+    background:#ECECEC;
+    nav{
+        
+        background:#ECECEC!important;
+        .nav-link{
+            margin-left:40px;
+            font-weight:bold;
+                color:rgb(116, 116, 116)!important;
+        }
+        .active a{
+            transform: all .3s ease-in;
+            color:$main-color!important;
+        }
+    }
+}
+.create-invoice{
+    margin-top:50px!important;
+    input[type=submit]{
+        background:$main-color;
+        color:white;
+        padding: 8px 18px;
+        border:none;
+        font-weight: bold;
+        outline: none;
+    }
+  .title {
+    h1{
+        font-size:28px;
+        font-weight:bold;
+        padding-bottom:15px;
+    }
+     hr{
+         background:$main-color;
+         width:125px;
+         height:2px;
+
+     }
+  
+  }
+  .form-element{
+      padding-top:5px;
+      padding-bottom:5px;
+      input[type=text],input[type=date], select{
+          border:1px solid rgb(179, 179, 179);
+          padding-left:3px;
+          width:350px;
+      }
+     
+  }
+  .counter {
+    input{
+        width:25px!important;
+    }
+    button{
+        background:$main-color;
+        border:none;
+        color:white;
+        outline: none;
+    }
+      
+  }
+  .border{
+      padding:25px!important;
+  }
+}
+
+@media (min-width:1361px){
+    .navbar{
+        width:1080px;
+    }
+    .create-invoice{
+        width:1080px;
+        margin:0 auto;
+        .title{
+            width:100%;
+        }
+    }
+}
+@media (max-width:1360px){
+    .navbar{
+        max-width:1080px;
+    }
+    input[type=text],input[type=date], select{
+        width:150px!important;
+    }
+
+}

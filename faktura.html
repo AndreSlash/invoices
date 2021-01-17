@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Rachunki<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Towary i usługi<span class="sr-only"></span></a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kontrahenci</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Uzytkownik</a>
+                  </li>
+             
+    
+              </ul>
+            
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="create-invoice">
+            <div class="container border">
+                <div class="row">
+                    <div class="col-12 title">
+                        <h1>Utwórz fakturę</h1>
+                        <hr align="left"></hr>
+                    </div>
+                </div>
+                <form  >
+                    <div class="row ">
+                        <div class="col-12 col-lg-6 border-blue">
+                            <div class="form-element">
+                                <h4>Nr dokumentu</h4>
+                                <input type="text">
+                            </div>
+                            <div class="form-element">
+                                <h4>Data wystawienia</h4>
+                                <input type="date">
+                            </div>
+                            <div class="form-element">
+                                <h4>Miejsce wystawienia</h4>
+                                <input type="text">
+                            </div>
+                            <div class="form-element">
+                                <h4>Dta sprzedaży</h4>
+                                <input type="date">
+                            </div>
+                            <div class="form-element">
+                                <h4>Data płatności</h4>
+                                <input type="date">
+                            </div>
+                            <div class="form-element">
+                                <h4>Rodzaj płatności</h4>
+                                <select>
+                                    <option value="przelew">Przelew</option>
+                                    <option value="za pobraniem">Za pobraniem</option>
+                                </select>
+                            </div>
+                            <div class="form-element">
+                                <h4>Nabywca</h4>
+                                <select>
+                                    <option value="k1">Kontrahent 1</option>
+                                    <option value="k2">Kontrahent 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 ">
+                            <div class="form-element">
+                                <h4>Kategoria</h4>
+                                <select>
+                                    <option value="good">Towar</option>
+                                    <option value="service">Usługa</option>
+                                </select>
+                            </div>
+                            <div class="form-element">
+                                <h4>Nazwa towaru/usługi</h4>
+                                <select>
+                                    <option value="good">Książka</option>
+                                    <option value="service">Lampa</option>
+                                </select>
+                            </div>
+                            <div class="form-element">
+                                <h4>Cena</h4>
+                                <input type="text">
+                            </div>
+                            <div class="form-element counter">
+                                <h4>Ilość</h4>
+                                <input id="counter" type="text" disabled value="1">
+                                <button id="plus">+</button>
+                                <button id="sub">-</button>
+                            </div>
+                            <div class="form-element">
+                                <h4>Wartość</h4>
+                                <input type="text" id="total" disabled value="0">
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <input type="submit" value="Podsumowanie"/>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+           
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
