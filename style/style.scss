@@ -21,7 +21,9 @@ body{
             font-weight:bold;
                 color:rgb(116, 116, 116)!important;
         }
-        .active a{
+        .activee{
+    
+            text-decoration: none;
             transform: all .3s ease-in;
             color:$main-color!important;
         }

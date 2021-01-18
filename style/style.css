@@ -27,7 +27,8 @@ body h4 {
   color: #747474 !important;
 }
 
-.header nav .active a {
+.header nav .activee {
+  text-decoration: none;
   -webkit-transform: all .3s ease-in;
           transform: all .3s ease-in;
   color: #484FFF !important;

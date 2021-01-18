@@ -22,3 +22,4 @@ btns.addEventListener("click",()=>{
         total.value=val2*val;
     }
 })
+

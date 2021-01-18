@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAA;EACJ,UAAU,EAAC,IAAI;EACf,aAAa,EAAC,IAAI;CACrB;;AACD,AAAA,MAAM,CAAA;EACF,UAAU,EAAC,IAAI,CAAA,UAAU;CAC5B",
+    "sources": [
+        "style-goods-services.scss"
+    ],
+    "names": [],
+    "file": "style-goods-services.css"
+}
