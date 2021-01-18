@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/style-invoice.css">
+    <link rel="stylesheet" href="style/style-goods-services.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
@@ -18,14 +19,14 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
+            <li class="nav-item active">
               <a class="nav-link" href="invoices.html">Rachunki<span class="sr-only"></span></a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="goods-services.html">Towary i usługi<span class="sr-only"></span></a>
+                <a class="nav-link active" href="goods-services.html">Towary i usługi<span class="sr-only"></span></a>
               </li>
             <li class="nav-item">
-              <a class="nav-link" href="contractor.html">Kontrahenci</a>
+              <a class="nav-link" href="#">Kontrahenci</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Uzytkownik</a>
@@ -39,41 +40,43 @@
     </header>
     <main>
         <section class="create-invoice">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Numer faktury</th>
-                    <th scope="col">Data wystawienia</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>FV-415SW7</td>
-                    <td>2020-01-01</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>FV-415SW7</td>
-                    <td>2020-01-01</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>FV-415SW7</td>
-                    <td>2020-01-01</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a href="index.html"><button class="add-new">Dodaj nową</button></a>
+          <div class="title">
+            <h1>Dodaj kontraktora</h1>
+            <hr align="left"></hr>
+        </div>
+            <div class="form-element">
+                <h4>Nazwa</h4>
+                <input type="text">
+            </div>
+            <div class="form-element">
+                <h4>NIP</h4>
+                <input type="text">
+            </div>
+            <div class="form-element">
+                <h4>Adres</h4>
+                <input type="text">
+            </div>
+            <div class="form-element">
+                <h4>Kod pocztowy</h4>
+                <input type="text">
+            </div>
+            <div class="form-element">
+                <h4>Miasto</h4>
+                <input type="text">
+            </div>
+            <div class="form-element">
+                <h4>Email</h4>
+                <input type="email">
+            </div>
+              <a href="#"><button class="add-new">Dodaj</button></a>
         </section>
     </main>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/script.js"></script>
+    
     <script
     src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
+    <script src="scripts/menu.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
